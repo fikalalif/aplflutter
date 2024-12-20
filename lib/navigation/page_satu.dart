@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:untitled5/navigation/page_dua.dart';
 import 'package:untitled5/services/users_service.dart';
 
 import '../models/users.dart';
@@ -48,6 +47,8 @@ class _PageSatuState extends State<PageSatu> {
                   leading: CircleAvatar(
                     backgroundImage: NetworkImage(user.avatar),
                   ),
+                  title: Text('${user.firstName}${user.lastName}'),
+                  subtitle: Text('${user.email}'),
                 );
               },
             );
